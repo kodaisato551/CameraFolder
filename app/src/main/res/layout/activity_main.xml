@@ -16,6 +16,15 @@
        />
 
     <Button
+            android:text="To folder"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/toFolderButton"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/recordButton"
+            android:layout_marginLeft="63dp"
+            android:layout_marginBottom="2dp"/>
+    <Button
         android:id="@+id/playButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,4 +39,5 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/recordButton"/>
+
 </RelativeLayout>
