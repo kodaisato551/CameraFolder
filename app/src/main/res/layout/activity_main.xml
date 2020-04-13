@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_weather"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="search weather" />
 
     <Button
         android:id="@+id/recordButton"
@@ -12,32 +19,35 @@
         android:layout_height="wrap_content"
         android:text="Record"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-       />
+        android:layout_alignParentStart="true" />
 
     <Button
-            android:text="To folder"
-            android:layout_width="109dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/toFolderButton"
-            android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/recordButton"
-            android:layout_marginLeft="63dp"
-            android:layout_marginBottom="2dp"/>
+        android:id="@+id/toFolderButton"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="66dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toRightOf="@+id/recordButton"
+        android:text="To folder" />
+
     <Button
         android:id="@+id/playButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Play"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-     />
+        android:layout_alignParentEnd="true" />
+
     <VideoView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/videoView"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentTop="false"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/recordButton"/>
+        android:layout_above="@+id/recordButton"
+        android:layout_below="@+id/search_weather" />
+
 
 </RelativeLayout>
